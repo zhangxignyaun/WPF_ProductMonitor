@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|d:\\software\\develop\\net\\project\\wpf\\productmonitor\\productmonitor\\usercontrols\\monitoruc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|solutionrelative:productmonitor\\usercontrols\\monitoruc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|d:\\software\\develop\\net\\project\\wpf\\productmonitor\\productmonitor\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|solutionrelative:productmonitor\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "ProductMonitor\\ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "ProductMonitor\\ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T04:35:20.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MonitorUC.xaml",
+              "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\UserControls\\MonitorUC.xaml",
+              "RelativeDocumentMoniker": "ProductMonitor\\UserControls\\MonitorUC.xaml",
+              "ToolTip": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\UserControls\\MonitorUC.xaml",
+              "RelativeToolTip": "ProductMonitor\\UserControls\\MonitorUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-18T04:29:47.885Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

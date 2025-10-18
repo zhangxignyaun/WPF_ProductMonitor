@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "dgSpecHash": "hVg22ZSUQ6Y=",
+  "success": true,
+  "projectFilePath": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\ProductMonitor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\风空花人\\.nuget\\packages\\livecharts\\0.9.5\\livecharts.0.9.5.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\livecharts.wpf\\0.9.5\\livecharts.wpf.0.9.5.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net8.0-windows7.0”还原包“LiveCharts 0.9.5”。此包可能与项目不完全兼容。",
+      "projectPath": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\ProductMonitor.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\ProductMonitor.csproj",
+      "libraryId": "LiveCharts",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net8.0-windows7.0”还原包“LiveCharts.Wpf 0.9.5”。此包可能与项目不完全兼容。",
+      "projectPath": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\ProductMonitor.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\ProductMonitor.csproj",
+      "libraryId": "LiveCharts.Wpf",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
+}
