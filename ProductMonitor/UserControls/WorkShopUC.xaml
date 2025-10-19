@@ -1,0 +1,100 @@
+﻿<UserControl
+    x:Class="ProductMonitor.UserControls.WorkShopUC"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ProductMonitor.UserControls"
+    xmlns:cus ="clr-namespace:ProductMonitor.CustomControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <Style TargetType="RadioButton">
+            <Setter Property="Width" Value="50"/>
+            <Setter Property="Height" Value="28"/>
+            <Setter Property="Background" Value="#55ffffff"/>
+            <Setter Property="Foreground" Value="#ffffff"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="BorderBrush" Value="#11ffffff"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsChecked" Value="True">
+                    <Setter Property="Background" Value="Orange"/>
+                    <Setter Property="Foreground" Value="#888"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        
+    </UserControl.Resources>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="11*"/>
+            
+        </Grid.RowDefinitions>
+        <Border Background="#11ffffff" Margin="10,5"/>
+        <Border Background="#11ffffff" Margin="10,5" Grid.Row="1"/>
+        
+        <!--第一行-->
+        <Button Content="返回" Command="{Binding GoBackMonitorCommand,RelativeSource={RelativeSource AncestorType=Window}}" Style="{StaticResource BtnStyle}" Tag="&#xe9a2;" Height="28" Width="80" HorizontalAlignment="Left" Margin="10,5"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10,5">
+            <TextBlock Text="机台状态" Foreground="White" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <RadioButton Content="全部" IsChecked="True"/>
+            <RadioButton Content="作业" />
+            <RadioButton Content="等待" />
+            <RadioButton Content="故障" />
+            <RadioButton Content="停机" />
+        </StackPanel>
+        
+        <!--第二行-->
+        <ScrollViewer Grid.Row="1" Margin="10,5">
+            <ItemsControl ItemsSource="{Binding MachineList}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="5"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderThickness="0,1,0,0" BorderBrush="#9918aabd" Background="#0a18aabd" Margin="5">
+                            <Grid TextBlock.FontSize="11">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="6*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock VerticalAlignment="Center" Foreground="#22ffffff">
+                                    <Run Text="-"></Run>
+                                    <Run Text="{Binding Name}"></Run>
+                                </TextBlock>
+
+                                <Grid Grid.Row="1">
+                                    <cus:CircleProgressBar VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Background="#11ffffff"  RingThickness="10" RingBackground="#11ffffff" RingForeground="Orange" Progress="{Binding Percent}"/>
+
+                                </Grid>
+                                
+
+                                <TextBlock Grid.Row="1" Text="{Binding Percenttag}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                <TextBlock Grid.Row="2" Text="{Binding PlanCount}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                <TextBlock Grid.Row="3" Text="{Binding FnishedCount}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                <TextBlock Grid.Row="4" Text="{Binding Percenttag}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

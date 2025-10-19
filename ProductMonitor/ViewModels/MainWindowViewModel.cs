@@ -1,4 +1,7 @@
-﻿using ProductMonitor.Models;
+﻿using LiveCharts;
+using LiveCharts.Defaults;
+using LiveCharts.Wpf;
+using ProductMonitor.Models;
 using ProductMonitor.UserControls;
 using System;
 using System.Collections.Generic;
@@ -6,15 +9,13 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
+using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Threading;
-using LiveCharts;
-using LiveCharts.Defaults;
-using LiveCharts.Wpf;
 
 namespace ProductMonitor.ViewModels
 {
@@ -91,6 +92,49 @@ namespace ProductMonitor.ViewModels
             RadarList.Add(new RadarModel { Item = "金", Value = 45 });
             RadarList.Add(new RadarModel { Item = "土", Value = 24 });
             RadarList.Add(new RadarModel { Item = "火", Value = 67 });
+            #endregion
+
+            #region 初始化人员缺岗信息
+            StuffOutWorkList = new List<StuffOutWorkModel>();
+            StuffOutWorkList.Add(new StuffOutWorkModel { Name="张三",Duty="技术员",ManHour=32});
+            StuffOutWorkList.Add(new StuffOutWorkModel { Name="李四",Duty="车工",ManHour=23});
+            StuffOutWorkList.Add(new StuffOutWorkModel { Name="王五",Duty="车工",ManHour=34});
+            StuffOutWorkList.Add(new StuffOutWorkModel { Name="小明",Duty="技术员",ManHour=12});
+            StuffOutWorkList.Add(new StuffOutWorkModel { Name="小红",Duty="统计员",ManHour=34});
+            #endregion
+
+            #region 初始化车间列表
+            WorkShopList = new List<WorkShopModel>();
+            WorkShopList.Add(new WorkShopModel { WorkShopName="装凯车间",WorkingCount=10,WaitCount=3,FaultCount=1,StopCount=6});
+            WorkShopList.Add(new WorkShopModel { WorkShopName="贴片车间",WorkingCount=5,WaitCount=3,FaultCount=1,StopCount=2});
+            WorkShopList.Add(new WorkShopModel { WorkShopName="封装车间",WorkingCount=6,WaitCount=2,FaultCount=2,StopCount=1});
+            WorkShopList.Add(new WorkShopModel { WorkShopName="挤压车间",WorkingCount=6,WaitCount=2,FaultCount=2,StopCount=1});
+            #endregion
+
+            #region 初始化机台数据
+            MachineList = new List<MachineModel>();
+            Random random = new Random();
+            for (int i=0; i<20;i++)
+            {
+                int plan = random.Next(100,1000);
+                int finish = random.Next(0,plan);
+                MachineList.Add(new MachineModel
+                {
+                    Name = "焊接机-"+(i+1),
+                    FnishedCount = finish,
+                    PlanCount = plan,
+                    Status="作业中",
+                    OrderNo="H2025101700123"
+                });
+            }
+            MachineList.Add(new MachineModel
+            {
+                Name = "焊接机-" + (26),
+                FnishedCount = 22,
+                PlanCount = 22,
+                Status = "作业中",
+                OrderNo = "H2025101700123"
+            });
             #endregion
             //配置定时器（每秒触发一次）
             _timer.Interval = TimeSpan.FromSeconds(1);
@@ -296,5 +340,43 @@ namespace ProductMonitor.ViewModels
 
         #endregion
 
+        #region 缺岗员工属性
+        private List<StuffOutWorkModel> _stuffOutWorkList;
+
+        public List<StuffOutWorkModel> StuffOutWorkList
+        {
+            get { return _stuffOutWorkList; }
+            set { _stuffOutWorkList = value;
+                OnPropertyChanged();
+            }
+        }
+
+        #endregion
+
+        #region 车间属性
+        private List<WorkShopModel> _workShopList;
+
+        public List<WorkShopModel> WorkShopList
+        {
+            get { return _workShopList; }
+            set { _workShopList = value; 
+                OnPropertyChanged();
+            }
+        }
+
+        #endregion
+
+        #region 机台属性
+        private List<MachineModel> _machineList;
+
+        public List<MachineModel> MachineList
+        {
+            get { return _machineList; }
+            set { _machineList = value; 
+                OnPropertyChanged();
+            }
+        }
+
+        #endregion
     }
 }

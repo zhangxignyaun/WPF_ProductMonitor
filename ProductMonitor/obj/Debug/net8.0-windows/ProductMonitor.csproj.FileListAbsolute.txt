@@ -22,7 +22,6 @@ D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\obj\Debug\net8
 D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\obj\Debug\net8.0-windows\App.baml
 D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\obj\Debug\net8.0-windows\UserControls\MonitorUC.g.cs
 D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\obj\Debug\net8.0-windows\UserControls\MonitorUC.baml
-D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\obj\Debug\net8.0-windows\Dictionary\WeekDayConvert.baml
 D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\obj\Debug\net8.0-windows\Dictionary\BtnStyleDic.baml
 D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\bin\Debug\net8.0-windows\LiveCharts.dll
 D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll
@@ -31,3 +30,7 @@ D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\obj\Debug\net8
 D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\obj\Debug\net8.0-windows\UserControls\RadarUC.g.cs
 D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\obj\Debug\net8.0-windows\UserControls\RadarUC.baml
+D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\obj\Debug\net8.0-windows\ProductMonitor.sourcelink.json
+D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\obj\Debug\net8.0-windows\UserControls\WorkShopUC.g.cs
+D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\obj\Debug\net8.0-windows\UserControls\WorkShopUC.baml
+D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\obj\Debug\net8.0-windows\Themes\Generic.baml

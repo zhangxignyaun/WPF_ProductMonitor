@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProductMonitor"
         FontFamily="微软雅黑"
-        
+        MinHeight="500"
+        MinWidth="900"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         Title="生产监控平台" Height="750" Width="1200">
+   
     <WindowChrome.WindowChrome>
         <!--隐藏WPF自带头部-->
             <WindowChrome GlassFrameThickness="0"></WindowChrome>

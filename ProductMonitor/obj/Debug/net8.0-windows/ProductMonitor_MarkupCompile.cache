@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\Software\develop\net\Project\WPF\ProductMonitor\ProductMonitor\App.xaml
-61368717377
+7-2096238728
 
-11-346163387
+171232838290
 200-1849486774
-Dictionary\BtnStyleDic.xaml;Dictionary\OperationBtnStyleDic.xaml;Dictionary\WeekDayConvert.xaml;MainWindow.xaml;UserControls\MonitorUC.xaml;UserControls\RadarUC.xaml;
+Dictionary\BtnStyleDic.xaml;Dictionary\OperationBtnStyleDic.xaml;MainWindow.xaml;Themes\Generic.xaml;UserControls\MonitorUC.xaml;UserControls\RadarUC.xaml;UserControls\WorkShopUC.xaml;
 
 False
 
