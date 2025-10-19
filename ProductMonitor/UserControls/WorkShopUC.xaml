@@ -56,7 +56,7 @@
         </StackPanel>
         
         <!--第二行-->
-        <ScrollViewer Grid.Row="1" Margin="10,5">
+        <ScrollViewer Grid.Row="1" Margin="10,5" VerticalScrollBarVisibility="Hidden">
             <ItemsControl ItemsSource="{Binding MachineList}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -80,15 +80,27 @@
                                 </TextBlock>
 
                                 <Grid Grid.Row="1">
-                                    <cus:CircleProgressBar VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Background="#11ffffff"  RingThickness="10" RingBackground="#11ffffff" RingForeground="Orange" Progress="{Binding Percent}"/>
+                                    <cus:CircleProgressBar VerticalContentAlignment="Center" HorizontalContentAlignment="Center"   RingThickness="10" RingBackground="#11ffffff" RingForeground="Orange" Progress="{Binding Percent}"/>
 
                                 </Grid>
-                                
+                                <TextBlock  Grid.Row="1" Text="{Binding Percenttag}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
 
-                                <TextBlock Grid.Row="1" Text="{Binding Percenttag}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
-                                <TextBlock Grid.Row="2" Text="{Binding PlanCount}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
-                                <TextBlock Grid.Row="3" Text="{Binding FnishedCount}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
-                                <TextBlock Grid.Row="4" Text="{Binding Percenttag}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                                <StackPanel Margin="10,2,0,0" Grid.Row="2"  Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <TextBlock Text="计划数量" Foreground="#9918aabd"/>
+                                    <TextBlock Text="{Binding PlanCount}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="5,0,0,0"/>
+                                </StackPanel>
+                                <StackPanel Margin="10,2,0,0" Grid.Row="3"  Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <TextBlock Text="完成数量" Foreground="#9918aabd" />
+                                    <TextBlock Text="{Binding FnishedCount}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="5,0,0,0"/>
+                                </StackPanel>
+                                <StackPanel Margin="10,2,0,0" Grid.Row="4"  Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <TextBlock Text="工单编号" Foreground="#9918aabd"/>
+                                    <TextBlock Text="{Binding OrderNo}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="5,0,0,0"/>
+                                </StackPanel>
+                                
+                                
+                                
+                                
                                 
                             </Grid>
                         </Border>

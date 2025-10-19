@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|d:\\software\\develop\\net\\project\\wpf\\productmonitor\\productmonitor\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|solutionrelative:productmonitor\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|d:\\software\\develop\\net\\project\\wpf\\productmonitor\\productmonitor\\opcommand\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|solutionrelative:productmonitor\\opcommand\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|d:\\software\\develop\\net\\project\\wpf\\productmonitor\\productmonitor\\usercontrols\\workshopuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|solutionrelative:productmonitor\\usercontrols\\workshopuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|d:\\software\\develop\\net\\project\\wpf\\productmonitor\\productmonitor\\models\\machinemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|solutionrelative:productmonitor\\models\\machinemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|d:\\software\\develop\\net\\project\\wpf\\productmonitor\\productmonitor\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|solutionrelative:productmonitor\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|d:\\software\\develop\\net\\project\\wpf\\productmonitor\\productmonitor\\opcommand\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|solutionrelative:productmonitor\\opcommand\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8EFF4AFE-3CF5-4030-9A26-8BAD1F682647}|ProductMonitor\\ProductMonitor.csproj|d:\\software\\develop\\net\\project\\wpf\\productmonitor\\productmonitor\\customcontrols\\circleprogressbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -47,8 +47,7 @@
               "ViewState": "AgIAAHYAAAAAAAAAAAAAwIwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T08:59:08.939Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -63,37 +62,36 @@
               "ToolTip": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\Themes\\Generic.xaml",
               "RelativeToolTip": "ProductMonitor\\Themes\\Generic.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-19T09:20:14.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T09:20:14.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MachineModel.cs",
               "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\Models\\MachineModel.cs",
               "RelativeDocumentMoniker": "ProductMonitor\\Models\\MachineModel.cs",
               "ToolTip": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\Models\\MachineModel.cs",
               "RelativeToolTip": "ProductMonitor\\Models\\MachineModel.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAqwBQAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwBQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T09:06:16.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "WorkShopUC.xaml",
               "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\UserControls\\WorkShopUC.xaml",
               "RelativeDocumentMoniker": "ProductMonitor\\UserControls\\WorkShopUC.xaml",
-              "ToolTip": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\UserControls\\WorkShopUC.xaml",
-              "RelativeToolTip": "ProductMonitor\\UserControls\\WorkShopUC.xaml",
+              "ToolTip": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\UserControls\\WorkShopUC.xaml*",
+              "RelativeToolTip": "ProductMonitor\\UserControls\\WorkShopUC.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-10-19T06:20:31.378Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Command.cs",
               "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\OpCommand\\Command.cs",
               "RelativeDocumentMoniker": "ProductMonitor\\OpCommand\\Command.cs",
@@ -101,18 +99,17 @@
               "RelativeToolTip": "ProductMonitor\\OpCommand\\Command.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAuwCYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T05:38:35.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T05:38:35.475Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindowViewModel.cs",
               "DocumentMoniker": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\ViewModels\\MainWindowViewModel.cs",
               "RelativeDocumentMoniker": "ProductMonitor\\ViewModels\\MainWindowViewModel.cs",
-              "ToolTip": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\ViewModels\\MainWindowViewModel.cs*",
-              "RelativeToolTip": "ProductMonitor\\ViewModels\\MainWindowViewModel.cs*",
-              "ViewState": "AgIAADIAAAAAAAAAAADwv4UAAAAeAAAAAAAAAA==",
+              "ToolTip": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "ProductMonitor\\ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-18T04:35:20.27Z",
               "EditorCaption": ""
