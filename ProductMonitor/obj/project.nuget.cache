@@ -1,11 +1,30 @@
 {
   "version": 2,
-  "dgSpecHash": "hVg22ZSUQ6Y=",
+  "dgSpecHash": "fX3/LGewtK0=",
   "success": true,
   "projectFilePath": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\ProductMonitor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\风空花人\\.nuget\\packages\\livecharts\\0.9.5\\livecharts.0.9.5.nupkg.sha512",
-    "C:\\Users\\风空花人\\.nuget\\packages\\livecharts.wpf\\0.9.5\\livecharts.wpf.0.9.5.nupkg.sha512"
+    "C:\\Users\\风空花人\\.nuget\\packages\\livecharts.wpf\\0.9.5\\livecharts.wpf.0.9.5.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\nmodbus4\\2.1.0\\nmodbus4.2.1.0.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.android-arm.runtime.native.system.io.ports\\9.0.10\\runtime.android-arm.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.android-arm64.runtime.native.system.io.ports\\9.0.10\\runtime.android-arm64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.android-x64.runtime.native.system.io.ports\\9.0.10\\runtime.android-x64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.android-x86.runtime.native.system.io.ports\\9.0.10\\runtime.android-x86.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\9.0.10\\runtime.linux-arm.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\9.0.10\\runtime.linux-arm64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.linux-bionic-arm64.runtime.native.system.io.ports\\9.0.10\\runtime.linux-bionic-arm64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.linux-bionic-x64.runtime.native.system.io.ports\\9.0.10\\runtime.linux-bionic-x64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.linux-musl-arm.runtime.native.system.io.ports\\9.0.10\\runtime.linux-musl-arm.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.linux-musl-arm64.runtime.native.system.io.ports\\9.0.10\\runtime.linux-musl-arm64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.linux-musl-x64.runtime.native.system.io.ports\\9.0.10\\runtime.linux-musl-x64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\9.0.10\\runtime.linux-x64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.maccatalyst-arm64.runtime.native.system.io.ports\\9.0.10\\runtime.maccatalyst-arm64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.maccatalyst-x64.runtime.native.system.io.ports\\9.0.10\\runtime.maccatalyst-x64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.native.system.io.ports\\9.0.10\\runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\9.0.10\\runtime.osx-arm64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\9.0.10\\runtime.osx-x64.runtime.native.system.io.ports.9.0.10.nupkg.sha512",
+    "C:\\Users\\风空花人\\.nuget\\packages\\system.io.ports\\9.0.10\\system.io.ports.9.0.10.nupkg.sha512"
   ],
   "logs": [
     {
@@ -28,6 +47,18 @@
       "warningLevel": 1,
       "filePath": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\ProductMonitor.csproj",
       "libraryId": "LiveCharts.Wpf",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net8.0-windows7.0”还原包“NModbus4 2.1.0”。此包可能与项目不完全兼容。",
+      "projectPath": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\ProductMonitor.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Software\\develop\\net\\Project\\WPF\\ProductMonitor\\ProductMonitor\\ProductMonitor.csproj",
+      "libraryId": "NModbus4",
       "targetGraphs": [
         "net8.0-windows7.0"
       ]

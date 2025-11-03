@@ -1,6 +1,7 @@
 ﻿using LiveCharts;
 using LiveCharts.Defaults;
 using LiveCharts.Wpf;
+using Modbus.Device;
 using ProductMonitor.Models;
 using ProductMonitor.UserControls;
 using System;
@@ -8,11 +9,13 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Globalization;
+using System.IO.Ports;
 using System.Linq;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Threading;
@@ -39,6 +42,39 @@ namespace ProductMonitor.ViewModels
             EnviromentList.Add(new EnviromentModel{EnItemName="PM2.5(m³)",EnValue=20 });
             EnviromentList.Add(new EnviromentModel{EnItemName="硫化氢(PPM)",EnValue=15 });
             EnviromentList.Add(new EnviromentModel{EnItemName="氮气(PPM)",EnValue=17 });
+
+            Task.Run(async () => {
+                while (true)
+                {
+                    try
+                    {
+                        // 读取寄存器（设备地址1，起始地址0x0000，数量2个）
+                        using (SerialPort Port = new SerialPort("COM1", 9600, Parity.None, 8, StopBits.One))
+                        {
+                            Port.Open();
+                            IModbusSerialMaster master = ModbusSerialMaster.CreateRtu(Port);
+                            ushort[] values =await master.ReadHoldingRegistersAsync(1, 0, 7);//从设备地址，寄存器起始地址，寄存器个数
+
+
+                            for (int i = 0; i < 7; i++)
+                            {
+                                EnviromentList[i].EnValue = values[i];
+                            }
+                            //Application.Current.Dispatcher.Invoke(() => {
+                                
+                            //});
+                            
+                        }
+
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"读取失败：{ex.Message}");
+                    }
+                }
+            });
             #endregion
 
             #region 报警信息初始化
@@ -136,6 +172,7 @@ namespace ProductMonitor.ViewModels
                 OrderNo = "H2025101700123"
             });
             #endregion
+           
             //配置定时器（每秒触发一次）
             _timer.Interval = TimeSpan.FromSeconds(1);
             _timer.Tick += (s, e) =>
@@ -143,7 +180,10 @@ namespace ProductMonitor.ViewModels
                 TimeStr = DateTime.Now.ToString("HH:mm");
                 DateStr = DateTime.Now.ToString("yyyy-MM-dd");
                 WeekStr = DateTime.Now.ToString("dddd", new CultureInfo("zh-CN"));
+                
+
             };
+           
             _timer.Start();
 
 
@@ -378,5 +418,8 @@ namespace ProductMonitor.ViewModels
         }
 
         #endregion
+
+        
+
     }
 }
